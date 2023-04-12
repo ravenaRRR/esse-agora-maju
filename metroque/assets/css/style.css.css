@@ -670,18 +670,21 @@ BANNER
   background-size: cover;
   padding: 170px 0px 120px 0px;
   border-radius: 0px 0px 25px 25px;
+
 }
 
 .main-banner .item-1 {
-  background-image: url(../images/banner-item-01.jpg);
+  background-image: url(../images/juliana.jpg);
+  
 }
 
 .main-banner .item-2 {
-  background-image: url(../images/banner-item-02.jpg);
+  background-image: url();
+ 
 }
 
 .main-banner .item-3 {
-  background-image: url(../images/banner-item-03.jpg);
+  background-image: url();
 }
 
 .main-banner .item {
@@ -690,7 +693,9 @@ BANNER
   background-size: cover;
   border-radius: 25px;
   padding: 100px 100px;
-  margin-left: 130px;
+  margin-left: 130px;  
+  opacity: 0.8;
+  height: 600px;
 }
 
 .main-banner .item span.category {
@@ -1014,7 +1019,7 @@ CURSOS
   position: absolute;
   right: -30px;
   top: -50px;
-  background-color: rgba(122, 106, 216, 0.95);
+  background-color: rgba(110, 216, 106, 0.95);
   width: 130px;
   height: 130px;
   border-radius: 50%;
@@ -1355,7 +1360,7 @@ EVENTOS
 }
 
 .events .item ul li:nth-of-type(2) {
-  width: 28%;
+
 }
 
 .events .item ul li span.category {
