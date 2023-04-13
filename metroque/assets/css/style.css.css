@@ -172,6 +172,15 @@ body {
   color: #fff;
 }
 
+
+button.entrar{
+  border-radius: 50%;
+  grid-column: 1;
+  background-color: #27723a;
+  font-family: poppins;
+  display: inline-block;
+}
+
 /* 
 ---------------------------------------------
 PRÉ-CARREGAMENTO
@@ -280,6 +289,81 @@ HEADER
 --------------------------------------------- 
 */
 
+.cont{
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+
+}
+
+.cont .btn{
+  font-size: 1em;
+    line-height: 1em;
+    letter-spacing: 0.04em;
+    display: inline-block;
+    position: relative;
+    height: 42px;
+    width: 190px;
+    overflow: hidden;
+    border-radius: 21px;
+    background-color: transparent;
+    border: transparent;
+    margin-left: 40px;
+ 
+
+}
+
+
+.cont .btn::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: rgba(255,255,255,0.5);
+	border-bottom-color: rgba(255,255,255,0.5);
+	transform: scale(0.1, 1);
+}
+.cont .btn:hover span {
+	letter-spacing: 2px;
+}
+.cont .btn:hover::before {
+	opacity: 1;	
+	transform: scale(1, 1);	
+}
+.cont .btn::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.3s;
+	background-color: rgba(255,255,255,0.1);
+}
+.cont .btn:hover::after {
+	opacity: 0;	
+	transform: scale(0.1, 1);
+}
+
+
+
+
+
+
+
+
+
+
 .background-header {
   background-color: #27723a !important;
   border-radius: 0px 0px 25px 25px;
@@ -326,8 +410,8 @@ HEADER
   text-transform: uppercase;
   color: #fff;
   font-weight: 600;
-  margin-right: 20px;
-  padding-right: 50px;
+  margin-right: 10px;
+  padding-right: 30px;
   width: 300px;
   border-right: 1px solid rgba(250, 250, 250, 0.3);
 }
@@ -367,6 +451,7 @@ HEADER
 
 .header-area .main-nav ul.nav {
   border-radius: 0px 0px 25px 25px;
+  width: 700;
   flex-basis: 100%;
   margin-right: 0px;
   justify-content: right;
