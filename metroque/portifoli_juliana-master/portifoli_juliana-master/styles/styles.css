@@ -645,6 +645,7 @@ section {
 }
 .main-btn .btn-text {
   padding: 0 2rem;
+  display: flex;
 }
 .main-btn .btn-icon {
   background-color: var(--color-secondary);

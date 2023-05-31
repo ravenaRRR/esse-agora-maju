@@ -1829,6 +1829,7 @@ body {
   .main-banner .item .buttons .main-button {
     margin-right: 0px;
     margin-bottom: 30px;
+    display: flex;
   }
   .main-banner .owl-nav {
     left: 50% !important;
@@ -1873,6 +1874,7 @@ body {
   }
   .about-us .section-heading .main-button {
     margin-top: 30px;
+    display: flex;
   }
   .about-us .main-button a {
     background-color: #27723a;
